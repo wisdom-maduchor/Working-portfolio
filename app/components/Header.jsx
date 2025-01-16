@@ -17,7 +17,7 @@ const Header = () => {
       </h1>
       <p className="max-w-2xl mx-auto font-Ovo">
         I am a frontend Developer from Lagos, Nigeria with 3 years of experience
-        in Technocrat
+        in Technocrat.
       </p>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
