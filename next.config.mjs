@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    output: 'export',
+    basePath: '/Potfoleo', // Replace 'your-repo-name' with the actual repository name
+    assetPrefix: '/Potfoleo',
+  };
+  
+  export default nextConfig;
+  
