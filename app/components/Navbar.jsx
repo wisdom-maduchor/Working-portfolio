@@ -33,12 +33,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             : ""
         }`}
       >
-        <a href="#top">
-          <Image
+        <a className="mr-14 w-28" href="#top">
+          {/* <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
             alt=""
             className="w-28 cursor-pointer mr-14"
-          />
+          /> */}
         </a>
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3  ${
