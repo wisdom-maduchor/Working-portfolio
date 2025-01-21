@@ -1,4 +1,4 @@
-<!-- This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -33,52 +33,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. -->
-
-"use client"
-import { useEffect, useState } from 'react';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Navbar from './components/Navbar'
-import Services from './components/Services';
-import Work from './components/Work';
-export default function Home() {
-const [isDarkMode, setIsDarkMode] = useState(false);
-
-useEffect(()=> {
-if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)){
-setIsDarkMode(true)
-}else{
-
-      setIsDarkMode(false)
-
-    }
-
-}, [])
-
-useEffect(() => {
-if(isDarkMode){
-document.documentElement.classList.add('dark');
-localStorage.theme = 'dark'
-}else{
-
-document.documentElement.classList.remove('dark');
-
-localStorage.theme = ''
-}
-}, [isDarkMode])
-return (
-<>
-<Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-
-  <Header isDarkMode={isDarkMode}/>
-  <About isDarkMode={isDarkMode}/>
-  <Services isDarkMode={isDarkMode}/>
-  <Work isDarkMode={isDarkMode}/>
-  <Contact isDarkMode={isDarkMode}/>
-  <Footer isDarkMode={isDarkMode}/>
-   </>
-  );
-}
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
