@@ -1,47 +1,36 @@
-"use client"
-import { useEffect, useState } from 'react';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Navbar from './components/Navbar'
-import Services from './components/Services';
-import Work from './components/Work';
-export default function Home() {
-const [isDarkMode, setIsDarkMode] = useState(false);
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-useEffect(()=> {
-if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)){
-setIsDarkMode(true)
-}else{
+## Getting Started
 
-      setIsDarkMode(false)
+First, run the development server:
 
-    }
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-}, [])
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-useEffect(() => {
-if(isDarkMode){
-document.documentElement.classList.add('dark');
-localStorage.theme = 'dark'
-}else{
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-document.documentElement.classList.remove('dark');
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-localStorage.theme = ''
-}
-}, [isDarkMode])
-return (
-<>
-<Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+## Learn More
 
-  <Header isDarkMode={isDarkMode}/>
-  <About isDarkMode={isDarkMode}/>
-  <Services isDarkMode={isDarkMode}/>
-  <Work isDarkMode={isDarkMode}/>
-  <Contact isDarkMode={isDarkMode}/>
-  <Footer isDarkMode={isDarkMode}/>
-   </>
-  );
-}
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
