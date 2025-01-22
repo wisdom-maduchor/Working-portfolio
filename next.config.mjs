@@ -3,6 +3,7 @@ const nextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '',
   basePath: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
   trailingSlash: true, // Optional, but recommended for GitHub Pages
+  output: 'export',
 };
 
 export default nextConfig;
