@@ -5,4 +5,4 @@ const nextConfig = {
   trailingSlash: true, // Optional, but recommended for GitHub Pages
 };
 
-module.exports = nextConfig;
+export default nextConfig;
