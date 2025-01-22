@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // output: 'export',
-    // basePath: '/Portfolio', // Replace 'your-repo-name' with the actual repository name
-    // assetPrefix: '/Portfolio',
-  };
-  
-  export default nextConfig;
-  
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
+  trailingSlash: true, // Optional, but recommended for GitHub Pages
+};
+
+module.exports = nextConfig;
