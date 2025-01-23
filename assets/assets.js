@@ -109,7 +109,7 @@ export const workData = [
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
     { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'Debuuging Applications', description: 'Debugging involves identifying, analyzing, and fixing errors to ensure the software functions efficiently....', link: '' },
+    { icon: assets.ui_icon, title: 'Debugging Applications', description: 'Debugging involves identifying, analyzing, and fixing errors to ensure the software functions efficiently....', link: '' },
     // { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 ]
 
