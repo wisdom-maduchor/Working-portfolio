@@ -85,19 +85,19 @@ export const workData = [
         title: 'Latest Movies',
         description: 'Web Design',
         bgImage: '/work-1.png',
-        link: 'https://github.com/emojih/Latest-Movies'
+        link: 'https://latest-movies-emojih.vercel.app/'
     },
     {
         title: 'To do app',
         description: 'Mobile App',
         bgImage: '/work-2.png',
-        link: 'https://github.com/emojih/To-Do-List-App'
+        link: 'https://to-do-list-app-emojih.vercel.app/'
     },
     {
         title: 'Portfolio site',
         description: 'Web Design',
         bgImage: '/work-3.png',
-        link: 'https://github.com/emojih/Portfolio'
+        link: 'https://portfolio-emojih.vercel.app/'
     },
     // {
     //     title: 'UI/UX designing',
