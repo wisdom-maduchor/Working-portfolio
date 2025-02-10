@@ -82,10 +82,10 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Latest Movies',
+        title: 'E-Commerce App',
         description: 'Web Design',
         bgImage: '/work-1.png',
-        link: 'https://latest-movies-emojih.vercel.app/'
+        link: 'http://foreverbuy.in/'
     },
     {
         title: 'To do app',
@@ -99,11 +99,12 @@ export const workData = [
         bgImage: '/work-3.png',
         link: 'https://portfolio-emojih.vercel.app/'
     },
-    // {
-    //     title: 'UI/UX designing',
-    //     description: 'UI/UX Design',
-    //     bgImage: '/work-4.png',
-    // },
+    {
+        title: 'Latest Movies',
+        description: 'Web Design',
+        bgImage: '/work-4.png',
+        link: 'https://latest-movies-emojih.vercel.app/'
+    },
 ]
 
 export const serviceData = [
