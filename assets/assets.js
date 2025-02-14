@@ -82,10 +82,10 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'E-Commerce App',
+        title: 'E-Commerce Website',
         description: 'Web Design',
         bgImage: '/work-1.png',
-        link: 'http://foreverbuy.in/'
+        link: 'https://forever-frontend-emojih.vercel.app/'
     },
     {
         title: 'To do app',
