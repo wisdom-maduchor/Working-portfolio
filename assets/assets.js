@@ -149,7 +149,7 @@ export const infoList = [
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Sc in Biochemistry",
+    description: "B.Eng in Computer Engineering",
   },
   {
     icon: assets.project_icon,
